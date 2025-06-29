@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arghya's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(2, 0, 25);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      main hr {
+        border: 0;
+        margin: 40px 150px;
+        height: 1px;
+        background-color: lavender;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 80px;
+        background-color: rgb(16, 16, 50);
+      }
+      nav ul {
+        display: flex;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0px 10px;
+      }
+      nav ul a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li :hover {
+        color: rgb(151, 151, 235);
+        font-size: 1.01rem;
+      }
+      .firstSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 140px 0;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 2.5rem;
+      }
+
+      .rightSection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(100, 41, 183);
+        font-weight: 600;
+      }
+      .gray {
+        color: gray;
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+      #element {
+        color: rgb(100, 41, 183);
+      }
+      .year {
+        color: gray;
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h2 {
+        font-size: 2rem;
+      }
+      .secondSection .horizontal-box {
+        background-color: white;
+        height: 1.5px;
+        width: 80vw;
+        margin: 38px 2px;
+        display: flex;
+      }
+
+      .secondSection .vertical-line {
+        background-color: white;
+        width: 1px;
+        height: 65px;
+        margin: 0px 186px;
+      }
+
+      .logo {
+        position: relative;
+        top: -25px;
+        left: -11px;
+        width: 23px;
+      }
+      .job-title {
+        width: 128px;
+        position: relative;
+        top: 43px;
+      }
+      .job-desc {
+        position: relative;
+        top: 51px;
+        left: 0px;
+        width: 204px;
+        border-radius: 20px;
+        color: #897eb0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Arghya's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/index.htm">Home</a></li>
+            <li><a href="/index.htm">About </a></li>
+            <li><a href="/index.htm">Service </a></li>
+            <li><a href="/index.htm">Projects</a></li>
+            <li><a href="/index.htm">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Introduction -->
+      <div class="firstSection">
+        <div class="leftSection">
+          Hi! I'm <span class="purple">Arghyajyoti</span>
+          <div>I'm a passioniate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="web Dev Background" />
+        </div>
+      </div>
+
+      <hr />
+      <!-- Work Experience -->
+      <div class="secondSection">
+        <div class="gray">What I've done so far</div>
+        <h2>Work Experience</h2>
+        <div class="horizontal-box">
+          <div class="vertical-line">
+            <img class="logo" src="cts.png" alt="Cognizant" />
+
+            <div class="job-title">
+              GenC Intern <span class="year">(2024-2025)</span>
+            </div>
+            <div class="job-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+              repellendus, deleniti, rerum neque odio architecto velit explicabo
+              sed aperiam numquam reiciendis illo itaque culpa ducimus
+              temporibus aliquam repudiandae illum voluptates.
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Java Developer",
+          "Python Developer",
+          "Graphic Designer",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
