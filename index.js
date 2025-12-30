@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const githubButton = document.getElementById("github");
     if (resumeButton) {
         resumeButton.addEventListener('click', () => { 
-            const resumeUrl = 'https://docs.google.com/document/d/1DunS2Mf2aeJqK2Jjb8knaJ3j3WtK58mV/edit?usp=drive_link';
+            const resumeUrl = 'https://github.com/Arghyajyoti007/My-Portfolio/blob/main/index.htm';
             window.open(resumeUrl, '_blank');
             console.log('Resume link opened in a new tab.');
         });
@@ -93,3 +93,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
